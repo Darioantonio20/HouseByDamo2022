@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/estilos.css">
+    </head>
+    <body>
+        <div class="logoHouseByDamo">
+            <img src="/imagenes/logo_houseByDamo.png" class="logoHouseByDamo">
+        </div>
+        <div>
+            <div class="contenedorCorreo"></div>
+                <img src="/imagenes/icono_correo.png" class="iconoCorreo">
+                <p class="tipografiaContacto">Contacto</p>
+                <p class="tipografiaCorreo">housebydamo@gmail.com</p>
+        </div>
+        <div>
+            <div class="contenedorRegistrarCasa"></div>
+                <img src="/imagenes/icono_casa.png" class="iconoCasa">
+                <p class="tipografiaRegistrarCasa">Registra ahora tu espacio</p>
+        </div>
+        <div>
+            <div class="navBar"></div>
+            <a href="/rentaInmuebles.html"><button class="textoInmuebles">Inmuebles</button></a>
+        <a href="/home.html"><button class="textoHome">Home</button></a>
+        <a href="/registroCasaDepa.html"><button class="textoRegistrarInmueble">Registro inmueble</button></a>
+        <a href="/home.html"><button class="textoAcercaDeNosotros">Acerca de nosotros</button></a>
+        </div>  
+        <div>
+            <img src="/imagenes/fondo3.png" class="fondo3">
+            <div class="contenedorRegistroDatosCasa"></div>
+            <div>
+                <form name="formularioRegristoCasa" method="get" action="./registroCasaExitoso.html">
+                    <a class="tituloRegistroCasa">Registro de casa</a>
+                    <a class="municipioRegistroCasa">Municipio:</a>
+                    <input class="entradaDeDatosMunicipio" name="municipio" type="text">
+                    <a class="codigoPostalRegistroCasa">Codigo postal:</a>
+                    <input class="entradaDeDatosCodigoPostal" type="number" name="codigoPostal">
+                    <a class="cantidadDeRecamaraRegistroCasa">Cantidad de recamaras:</a>
+                    <input class="entradaDeDatosCantidadDeRecamara" type="number" name="cantidadRecamaras">
+                    <a class="calleRegistroCasa">Calle:</a>
+                    <input class="entradaDeDatosCalle" type="text" name="calle">
+                    <a class="dimensionesRegistroCasa">Dimensiones:</a>
+                    <input class="entradaDeDatosDimensiones" type="number" name="dimensiones">
+                    <a class="antiguedadRegistroCasa">Antiguedad</a>
+                    <a class="espacioAntiguedad">(años):</a>
+                    <input class="entradaDeDatosAntiguedad" type="number" name="antiguedad">
+                    <a class="cantidadDeBañosRegistroCasa">Cantidad de baños:</a>
+                    <input class="entradaDeDatosCantidadDeBaños" type="number" name="cantidadBaños">
+                    <a class="numeroDeContactoRegistroCasa">Número de contacto:</a>
+                    <input class="entradaDeDatosNumeroDeContacto" type="number" name="numeroContacto">
+                    <a class="precioRegistroCasa">Precio($):</a>
+                    <input class="entradaDeDatosPrecio" type="number" name="precio">
+                    <a class="descripcionGeneralRegistroCasa">Descripción general:</a>
+                    <input class="entradaDeDatosDescripcionGeneral" type="text" name="descripcionGeneral">
+            </div>
+            <div>
+                <button class="btnImagenesCasa">+ Imagenes</button>
+                <button class="btnRegistrarCasa" onclick="extraccionDatosCasa()" >Registrar</button>
+            </div>
+            </form>
+        <script src="./js/main.js" async defer></script>
+    </body>
+</html>
